@@ -2,14 +2,14 @@
 #!/bin/bash
 isExistApp=pgrep httpd
 if [[ -n $isExistApp ]]; then
-systemctl stop httpd.service
+sudo systemctl stop httpd.service
 fi
 isExistApp=pgrep mysqld
 if [[ -n $isExistApp ]]; then
-systemctl stop mariadb.service
+sudo systemctl stop mariadb.service
 fi
 isExistApp=pgrep php-fpm
 if [[ -n $isExistApp ]]; then
-systemctl stop php-fpm.service
+sudo systemctl stop php-fpm.service
 
 fi
