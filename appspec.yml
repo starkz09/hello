@@ -7,9 +7,6 @@ hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
       timeout: 300
-  AfterInstall:
-    - location: scripts/permissions.sh
-      timeout: 300
   ApplicationStart:
     - location: scripts/start_server.sh
     - location: scripts/create_test_db.sh
