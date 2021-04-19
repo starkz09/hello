@@ -1,0 +1,1 @@
+chmod -R 755 /var/www/html/WordPress-master
