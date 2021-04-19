@@ -1,3 +1,4 @@
 #!/bin/bash
-sudo amazon-linux-extras install php7.4
-sudo yum install -y httpd mariadb-server php
+sudo apt update
+sudo apt install -y apache2 mariadb-server php
+rm -rf /var/www/html
