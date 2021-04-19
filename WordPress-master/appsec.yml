@@ -2,7 +2,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /WordPress-master
     destination: /var/www/html/WordPress-master
 hooks:
   BeforeInstall:
